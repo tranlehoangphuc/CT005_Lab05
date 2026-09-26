@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infographic và Video</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: #f3f7fb;
+        color: #1f2937;
+      }
+
+      .container {
+        max-width: 1150px;
+        margin: 40px auto;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 2.2rem;
+        margin-bottom: 30px;
+        color: #0f172a;
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 24px;
+      }
+
+      .box {
+        background: #fff;
+        border-radius: 18px;
+        box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+        padding: 22px;
+      }
+
+      .info-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .info-header h2 {
+        margin: 0;
+        font-size: 1.8rem;
+      }
+
+      .tag {
+        background: #dbeafe;
+        color: #1d4ed8;
+        padding: 8px 12px;
+        border-radius: 999px;
+        font-size: 0.8rem;
+        font-weight: bold;
+      }
+
+      .stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+        margin-bottom: 20px;
+      }
+
+      .stat {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 18px 14px;
+        text-align: center;
+      }
+
+      .stat span {
+        display: block;
+        color: #64748b;
+        font-size: 0.8rem;
+        margin-bottom: 8px;
+      }
+
+      .stat strong {
+        font-size: 1.7rem;
+        color: #0f172a;
+      }
+
+      .chart {
+        background: linear-gradient(135deg, #eff6ff, #f8fafc);
+        border: 1px solid #dbeafe;
+        border-radius: 14px;
+        padding: 18px;
+      }
+
+      .bars {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        height: 170px;
+        gap: 12px;
+        margin-top: 10px;
+      }
+
+      .bar-group {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+      }
+
+      .bar {
+        width: 100%;
+        max-width: 36px;
+        border-radius: 8px 8px 0 0;
+        background: linear-gradient(180deg, #60a5fa, #2563eb);
+      }
+
+      .bar-group span {
+        font-size: 0.8rem;
+        color: #475569;
+      }
+
+      .legend {
+        margin-top: 14px;
+        display: flex;
+        gap: 18px;
+        font-size: 0.85rem;
+        color: #475569;
+      }
+
+      .dot {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        margin-right: 8px;
+        vertical-align: middle;
+      }
+
+      .infographic-image {
+        display: block;
+        width: 100%;
+        max-height: 430px;
+        object-fit: contain;
+        border-radius: 12px;
+        border: 1px solid #e2e8f0;
+        background: #f8fafc;
+      }
+
+      .video-box h3 {
+        margin: 0 0 16px;
+        font-size: 1.5rem;
+      }
+
+      .video {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border: 0;
+        border-radius: 14px;
+      }
+
+      .note {
+        margin-top: 16px;
+        background: #f8fafc;
+        border-radius: 12px;
+        padding: 14px 16px;
+        color: #475569;
+        line-height: 1.6;
+      }
+
+      @media (max-width: 900px) {
+        .content {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media (max-width: 560px) {
+        .stats {
+          grid-template-columns: 1fr;
+        }
+
+        h1 {
+          font-size: 1.8rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Infographic và Video YouTube</h1>
+
+      <div class="content">
+        <div class="box">
+          <div class="info-header">
+            <h2>Infographic</h2>
+            <span class="tag">Học tập & sáng tạo</span>
+          </div>
+
+          <img
+            src="Lab05_Ex2.1.png"
+            alt="Infographic Lab05 Ex2.1"
+            class="infographic-image"
+          />
+
+          <div class="note">
+            Hình ảnh infographic được sử dụng trực tiếp từ bài tập Lab05_Ex2.1, giúp trang web có nội dung trực quan và sinh động hơn.
+          </div>
+        </div>
+
+        <div class="box video-box">
+          <h3>Video YouTube</h3>
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/ZonB5dLAdno"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+          </iframe>
+
+          <div class="note">
+            Video được nhúng từ YouTube theo link bạn cung cấp, giúp bổ sung thông tin trực quan cho trang.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
